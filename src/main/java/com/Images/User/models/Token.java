@@ -27,4 +27,10 @@ class Token {
         this.tokenValue = UUID.randomUUID().toString();
     }
 
+    public Token(Long id, String tokenValue, User user) {
+        this.id = id;
+        this.tokenValue = tokenValue;
+        this.user = user;
+    }
+
 }
