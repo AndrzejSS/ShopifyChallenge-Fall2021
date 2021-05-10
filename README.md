@@ -11,7 +11,7 @@ Images are represented with the Image class that contains a name, id, isPublic f
 Users are managed by a very very basic User class, the class just contains a username and password that is stored in the DB once created. When a user logs in a token is generated and associated with that user and then returned with the response to be used to authenticate future requests. 
 
 #### 2) How to Use: 
-
+If you have Maven installed you can run "mvn spring-boot:run" in the root directory. 
 
 
 
