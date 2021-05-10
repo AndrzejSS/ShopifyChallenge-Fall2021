@@ -1,5 +1,7 @@
 # ShopifyChallenge-Fall2021
 
+Dear anyone reading this.... I really thought you guys wouldn't start looking at my app till 11:59pm :o Im working to get a .jar file so you guys dont have to build it your self! 
+
 #### 1) Overview: 
 This application exposes REST apis for uploading, searching, and downloading images.
 It uses Spring boot with an in memory SQL database using H2 for datastorage.  
