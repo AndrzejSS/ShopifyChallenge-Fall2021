@@ -1,6 +1,6 @@
 # ShopifyChallenge-Fall2021
-This README is split into XXX sections: Overview, How to use the application, Architectural decisions, and how I would expand it in the future. 
 
+Dear anyone reading this.... I really thought you guys wouldn't start looking at my app till 11:59pm :o Im working to get a .jar file so you guys dont have to build it your self! 
 
 #### 1) Overview: 
 This application exposes REST apis for uploading, searching, and downloading images.
@@ -11,8 +11,9 @@ Images are represented with the Image class that contains a name, id, isPublic f
 Users are managed by a very very basic User class, the class just contains a username and password that is stored in the DB once created. When a user logs in a token is generated and associated with that user and then returned with the response to be used to authenticate future requests. 
 
 #### 2) How to Use: 
+If you have Maven installed you can run "mvn spring-boot:run" in the root directory.  
 
-
+There are sample Postman calls included in the root directory.
 
 
 #### 3) APIS
