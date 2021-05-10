@@ -20,8 +20,5 @@ public interface ImageRepository extends CrudRepository<Image, Long> {
 
     Optional<Image> findByName(String name);
 
-    List<ImageIdAndName> findAllBy();
-
-
     boolean existsByName(String name);
 }

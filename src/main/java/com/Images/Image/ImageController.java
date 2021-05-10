@@ -1,14 +1,11 @@
 package com.Images.Image;
 
-
 import com.Images.Image.models.Image;
 import com.Images.Image.models.ImageIdAndName;
 import com.Images.Image.models.Response;
 import com.Images.User.TokenRepository;
 import com.Images.User.UserService;
-import com.Images.User.models.Token;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -17,7 +14,6 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/images")
@@ -76,21 +72,4 @@ public class ImageController {
         List<ImageIdAndName> images = imageService.findImagesByTags(tags, tokenUsername);
         return new ResponseEntity<List<ImageIdAndName>>(images, HttpStatus.OK);
     }
-
-//    @GetMapping(value = "/search/image/name/{imageName}")
-//    @ResponseBody
-//    public ResponseEntity<List<ImageIdAndName>> findImageByName() {
-//        List<ImageIdAndName> images = ImageRepo.findImageByTags(tags);
-//        return new ResponseEntity<List<ImageIdAndName>>(images, HttpStatus.OK);
-//    }
-//
-//    @GetMapping(value = "/search/image/id/{imageId}")
-//    @ResponseBody
-//    public ResponseEntity<List<ImageIdAndName>> findImageById() {
-//        List<ImageIdAndName> images = ImageRepo.findImageByTags(tags);
-//        return new ResponseEntity<List<ImageIdAndName>>(images, HttpStatus.OK);
-//    }
-
-
-
 }
