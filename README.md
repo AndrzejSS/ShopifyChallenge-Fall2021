@@ -2,16 +2,17 @@
 
 #### 1) Overview: 
 This application exposes REST apis for uploading, searching, and downloading images.
-It uses Spring boot with an in memory SQL database using H2 for datastorage.  
+It uses Spring boot and H2 for an in memory SQL database. 
 
-Images are represented with the Image class that contains a name, id, isPublic for determining if other users can access the image, username for determining which user owns the image, a byte[] for storing the actual image, and a list of tags that are used to describe the image for searching.  
+Images are represented with the Image class that contains a name, id, isPublic (for determining if other users can access the image), username (for determining which user owns the image), a byte[] (for storing the actual image), and a list of tags that are used to describe the image for searching.  
 
-Users are managed by a very very basic User class, the class just contains a username and password that is stored in the DB once created. When a user logs in a token is generated and associated with that user and then returned with the response to be used to authenticate future requests. 
+Users are managed by a very very basic User class. The class just contains a username and password that is stored in the DB once created. When a user logs in, a token is generated and associated with that user and then returned with the response to be used to authenticate future requests. 
 
 #### 2) How to Use: 
 If you have Maven installed you can run "mvn spring-boot:run" in the root directory.  
 
-The project can also be run by running " java -jar ./target/demo-0.0.1-SNAPSHOT.jar "
+The project can also be run by running " java -jar ./target/demo-0.0.1-SNAPSHOT.jar "  
+
 There are sample Postman calls included in the root directory.
 
 
