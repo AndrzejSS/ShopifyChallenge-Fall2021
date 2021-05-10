@@ -1,7 +1,5 @@
 # ShopifyChallenge-Fall2021
 
-Dear anyone reading this.... I really thought you guys wouldn't start looking at my app till 11:59pm :o Im working to get a .jar file so you guys dont have to build it your self! 
-
 #### 1) Overview: 
 This application exposes REST apis for uploading, searching, and downloading images.
 It uses Spring boot with an in memory SQL database using H2 for datastorage.  
@@ -13,6 +11,7 @@ Users are managed by a very very basic User class, the class just contains a use
 #### 2) How to Use: 
 If you have Maven installed you can run "mvn spring-boot:run" in the root directory.  
 
+The project can also be run by running " java -jar ./target/demo-0.0.1-SNAPSHOT.jar "
 There are sample Postman calls included in the root directory.
 
 
