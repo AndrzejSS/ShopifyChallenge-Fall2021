@@ -59,3 +59,6 @@ Used for searching for an image based of the tags given to the image when upload
 
 #### 4) Future Expansion
 The most obvious expansion is upgrading the login/authentication as it is extremly basic and not at all ready for any sort of production use :). Additionally, adding the ability to search for an image based of the name or ID of another image can be added quite easily by querrying the image by name then looking for the tags. 
+
+#### 5) Sources
+I used this article https://medium.com/javarevisited/a-simple-user-authentication-api-made-with-spring-boot-4a7135ff1eca as insperation for my User class implementation 
